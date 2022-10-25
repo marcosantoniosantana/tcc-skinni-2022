@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forma de pagamento</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="./css/pagamento.css">
+
+	<link rel="shortcut icon" href="./imagens/imagens_pagina/icone_titulo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Merriweather+Sans&display=swap"
+		rel="stylesheet">
+</head>
+<body>
+
+	<header class="cabecalho">
+		<div class="itens-cabecalho">
+
+
+			<div class="logo">
+				<h1 class="titulo-logo">Skinni</h1>
+			</div>
+
+			<div class="barra-pesquisa">
+				<i class="fas fa-search pesquisar-icon"></i>
+				<input type="text" class="pesquisa" id="pesquisa" placeholder="Pesquisar...">
+			</div>
+
+			<div class="icones">
+
+				<a href="../compras/compras.html">
+					<div class="compras">
+						<i class="fas fa-shopping-bag"></i>
+					</div>
+				</a>
+
+				<a href="../login/login.html">
+					<div class="usuario">
+						<i class="fas fa-user"></i>
+					</div>
+				</a>
+			</div>
+
+		</div>
+
+			<div id="menu-bar" class="menu-bar">
+				<i class="fa-solid cor fa-bars"></i>
+			</div>
+
+		<nav class="menu">
+			
+			<ul>
+
+				<li><h5 class="link-menu">Conta</h5>
+					<ul class="submenu">
+						<li><a href="../login/login.html" class="link-menu"><span>Login</span></a></li>
+						<li><a href="../cadastro/cadastro.html" class="link-menu"><span>Criar conta</span></a></li>
+					</ul>
+				</li>
+
+				<li class="opMenu"><a href="index.php" class="link-menu"><span>Novidades</span></a></li>
+				<li class="opMenu"><a href="feminino.php" class="link-menu"><span>Feminino</span></a></li>
+				<li class="opMenu"><a href="masculino.php" class="link-menu"><span>Masculino</span></a></li>
+				<li class="opMenu"><a href="infantil.php" class="link-menu"><span>Infantil</span></a></li>
+				<li class="opMenu"><a href="moletons.php" class="link-menu"><span>Moletons</span></a></li>
+				<li class="opMenu"><a href="acessorios.html" class="link-menu"><span>Acessórios</span></a></li>
+			</ul>
+			<!--
+			<section class="subMenu-inferior"></section>
+			-->
+		</nav>
+	</header>
+
+	    <div class="marcadores">
+            <figure class="marcador"><span>Entrega</span></figure>
+            <figure class="marcador"><span>Pagamento</span></figure>
+        </div>
+
+    <form methood="GET" action="./php/pagamento.php">
+
+		<section class="container">
+			<h1>Forma de pagamento</h1>
+
+			<div class="forma-pagamentos">
+				
+				<p>
+					<input type="radio" class="credito" id="credito" name="pagamento" value="credito">
+					<span>Cartão de crédito</span>
+				</p>
+				
+				<p>
+					<input type="radio" class="debito" id="debito" name="pagamento" value="debito">
+					<span>Cartão de débito</span>
+				</p>
+				
+				<p>
+					<input type="radio" class="pix" id="pix" name="pagamento" value="pix">
+					<span>Pix</span>
+				</p>
+
+				<p>
+					<input type="radio" class="boleto" id="boleto" name="pagamento" value="boleto">
+					<span>Boleto</span>
+				</p>
+			</div>
+		</section>
+
+		<section id="area-pagamento">
+
+		</section>
+
+		<figure class="sombra"></figure>
+
+	</form>
+
+	<script>
+		let areaCredito = document.createElement("div")
+		areaCredito.id = "area"
+
+		let sombra = document.querySelector(".sombra")
+
+		let opcaoCredito = document.querySelector("#credito")
+		let opcaoDebito = document.querySelector("#debito")
+		let opcaoPix = document.querySelector("#pix")
+		let opcaoBoleto = document.querySelector("#boleto")
+
+		let container = document.querySelector("#area-pagamento")
+		
+		opcaoCredito.addEventListener("click", ()=>{
+			
+			container.appendChild(areaCredito)
+			container.style.backgroundColor="#0b0c42";
+
+			areaCredito.innerHTML = `
+			<div class="area-credito">
+
+				<button type="button" id="fechar"> <svg width="44" height="44" fill="none" stroke="#e5e32b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M18 6 6 18"></path>
+  <path d="m6 6 12 12"></path>
+</svg> </button>
+
+				<div class="input-cartao">
+					<input type="text" maxlength="19" placeholder=" " name="numeroCartao" id="n-credito" class="numero-cartao">
+					<label for="numero-cartao">Nº do cartão de crédito</label>
+				</div>
+					
+				<div class="input-cartao">
+					<input type="number" maxlength="3" placeholder=" " name="codCartao" class="cod-cartao">
+					<label for="cod-cartao">Código do cartão</label>
+				</div>
+
+				<div class="divisao">
+					<span class="validade">Data de validade: </span>
+					<input type="date" name="validadeCredito" id="validade">
+				</div>
+
+				<div class="area-bandeiras">
+					<span class="bandeira-cartao">Escolha a bandeira do cartão: </span>
+
+					<figure class="bandeiras-op">
+						<input type="radio" name="bandeiraCartao" value="visa" class="bandeiraCartao">
+						<input type="radio" name="bandeiraCartao" value="elo" class="bandeiraCartao">
+					</figure>
+				</div>
+
+				<button type="submit"> Finalizar compra </button>
+
+			</div>
+
+			`
+
+			sombra.classList.toggle("shadow")
+			sombra.addEventListener("click", ()=>{
+				console.log("Fechar")
+			})
+			
+			let nCredito = document.querySelector("#n-credito")
+			
+			nCredito.addEventListener("keypress", ()=>{
+				console.log(nCredito.value)
+				
+				let formatNcredito = nCredito.value.length
+				
+				//Verifica se é número ou texto
+				
+				if(formatNcredito === 4 || formatNcredito === 9 || formatNcredito === 14){
+					nCredito.value += " "
+				}
+				
+			})
+			fecharPagamento()
+		})
+
+		opcaoDebito.addEventListener("click", ()=>{
+			console.log("Opçao de pagamento cartão de crédito selecionada")
+
+			container.style.backgroundColor="#0b0c42";
+			container.appendChild(areaCredito)
+
+			areaCredito.innerHTML = `
+			<div class="area-credito">
+
+				<button type="button" id="fechar">
+					<svg width="44" height="44" fill="none" stroke="#e5e32b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ 						<path d="M18 6 6 18"></path>
+						<path d="m6 6 12 12"></path>
+					</svg>
+				</button>
+
+				<div class="input-cartao">
+					<input type="text" maxlength="19" placeholder=" " name="numeroCartao" id="n-credito" class="numero-cartao">
+					<label for="numero-cartao">Nº do cartão de débito</label>
+				</div>
+					
+				<div class="input-cartao">
+					<input type="number" maxlength="3" placeholder=" " name="codCartao" class="cod-cartao">
+					<label for="cod-cartao">Código do cartão</label>
+				</div>
+
+				<div class="divisao">
+					<span class="validade">Data de validade: </span>
+					<input type="date" name="validadeDebito" id="validade">
+				</div>
+
+				<div class="area-bandeiras">
+					<span class="bandeira-cartao">Escolha a bandeira do cartão: </span>
+
+					<figure class="bandeiras-op">
+						<input type="radio" name="bandeiraCartao" value="visa" class="bandeiraCartao">
+						<input type="radio" name="bandeiraCartao" value="elo" class="bandeiraCartao">
+					</figure>
+				</div>
+
+				<button type="submit"> Finalizar compra </button>
+
+			</div>
+			`
+
+			document.querySelector(".sombra").classList.toggle("shadow")
+			fecharPagamento()
+		})
+
+		opcaoPix.addEventListener("click", ()=>{
+			container.appendChild(areaCredito)
+			container.style.backgroundColor="#0b0c42";
+
+			areaCredito.innerHTML = `
+
+			<button type="button" id="fechar">
+				<svg width="44" height="44" fill="none" stroke="#e5e32b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ 						<path d="M18 6 6 18"></path>
+						<path d="m6 6 12 12"></path>
+					</svg>
+			</button>
+
+			<h2> Efetue já seu pegamento!</h2>
+
+			<div class="qrcode">
+				<img src="./imagens/imagens_pagina/pagamento/qrcode.jpeg"/>
+			</div>
+
+			<button type="submit"> Finalizar compra </button>
+			`
+
+			document.querySelector(".sombra").classList.toggle("shadow")
+			fecharPagamento()
+
+		})
+
+		opcaoBoleto.addEventListener("click", ()=>{
+			container.appendChild(areaCredito)
+			container.style.backgroundColor="#0b0c42";
+
+			areaCredito.innerHTML = `
+
+			<button type="button" id="fechar">
+				<svg width="44" height="44" fill="none" stroke="#e5e32b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ 						<path d="M18 6 6 18"></path>
+						<path d="m6 6 12 12"></path>
+					</svg>				
+			</button>
+
+			<h2> Efetue já seu pagamento!</h2>
+
+			<div class="boleto-cod">
+				<img src="./imagens/imagens_pagina/pagamento/codigo_barras.png"/>
+			</div>
+
+			<figure class="link-boleto">
+				<a href="./imagens/imagens_pagina/pagamento/Boleto.pdf">Imprimir boleto</a>
+			</figure>
+
+			<button type="submit"> Finalizar compra </button>
+
+			`
+
+			document.querySelector(".sombra").classList.toggle("shadow")
+			fecharPagamento()
+			
+		})
+		
+		function fecharPagamento(){
+			document.querySelector("#fechar").addEventListener("click", ()=>{
+				document.querySelector("#area-pagamento").style.backgroundColor = "transparent"
+				areaCredito.innerHTML = " "
+				document.querySelector(".sombra").classList.toggle("shadow")
+			})
+		}
+
+	</script>
+
+</body>
+</html>

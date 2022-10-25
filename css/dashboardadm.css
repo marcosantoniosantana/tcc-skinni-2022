@@ -1,0 +1,271 @@
+*{
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+body{
+	background: url('../imagens/imagens_pagina/fundo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: overlay;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background: rgba(93, 70, 141, 1.0);
+	transition: 1s;
+}
+
+.cabecalho{
+	width: 100%;
+	height: 150px;
+	background: #0b0c42;
+	z-index: 1000;
+    position: relative;
+}
+
+.itens-cabecalho{
+	max-width: 95%;
+	min-width: 320px;
+	height: 55%;
+	border-bottom: 1.5px solid #e5e32b;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+	position: relative;
+}
+
+.logo{
+	text-align: center;
+	transform: skew(-10deg) rotate(-5deg);
+	max-width: 250px;
+	cursor: pointer;
+}
+
+.titulo-logo{
+	font-size: 80px;
+	color: #e5e32b;
+	/*font-family: 'Merriweather Sans', sans-serif;*/
+	font-family: sans-serif;
+	font-weight: 700;
+	text-shadow: -10px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.barra-pesquisa{
+	width: 700px;
+	height: 35px;
+	background: rgba(255, 255, 255, 0.5);
+	border: 2.5px solid #000000;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pesquisa{
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.0);
+	border: 0px;
+	outline: 0;
+	font-size: 30px;
+}
+
+.pesquisando{
+	border: 2.5px solid #e5e32b;
+}
+
+.compras, .usuario{
+	width: 45px;
+	height: 45px;
+	background: #e5e32b;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #6b6b6b;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.compras:hover i{
+	transform: translatey(-5px);
+}
+
+.pesquisar-icon{
+	font-size: 20px;
+	margin-left: 5px;
+}
+
+.icones{
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu{
+	width: 100%;
+}
+
+.menu-bar{
+	display: none;
+	margin-left: 20px;
+}
+
+.menu ul{
+	margin-top: 5px;
+}
+
+.menu ul li{
+	list-style: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 56px;
+	/*background: transparent;*/
+}
+
+.menu ul li:nth-child(1){
+	display: none;
+}
+
+.menu ul li:hover{
+	background: #0a0a32;
+}
+
+.menu ul li:hover a{
+	text-decoration: underline;
+}
+
+/*Submenu para itens específicos:*/
+
+.subMenu-inferior{
+	width: 90%;
+	padding-bottom: 200px;
+	background-color: #0a0b38;
+	margin: 0 auto 0;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	display: none;
+}
+
+.login-bt-menu{
+	display: none;
+}
+
+.link-menu{
+	font-size: 25px;
+	font-weight: bolder;
+	font-family: sans-serif;
+	color: #e5e32b;
+	text-decoration: none;
+	margin: 35px;
+}
+
+.link-menu span{
+    padding: 12px 0 20px 0;
+}
+
+
+.container{
+    width: 100%;
+    height: calc(100% - 150px);
+    position: absolute;
+    display: flex;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+	flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: scroll;
+    justify-content: flex-start;
+}
+
+.options{
+	width: 150px;
+	height: 150px;
+	background-color: #0b042c;
+	padding: 50px;
+	border-radius: 15px;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	/*background: linear-gradient(
+  90deg,
+  rgba(2, 0, 36, 1) 0%,
+  rgba(9, 9, 121, 1) 35%,
+  rgba(0, 212, 255, 1) 100%
+);*/
+}
+
+.options:hover{
+	background-color: #4c1970;
+	transition: 1s;
+}
+
+.options span{
+	color: #e5e32b;
+	font-size: 1.5rem;
+	font-family: sans-serif;
+}
+
+.content ul{
+	justify-content: space-around;
+	list-style: none;
+	display: flex;
+	width: 100%;
+}
+
+.options svg{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.options svg g{
+	fill: #e5e32b;
+}
+
+/*tabela*/
+
+table{
+	background-color: #8586a1;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+table th{
+	background-color: #4c1970;
+	width: 100px;
+	color: #e5e32b;
+}
+
+table th, table td{
+	font-size: 1.3rem;
+	padding: 5px;
+}
+
+table td{
+	width: 100px;
+	background-color: #0b0c42;
+	color: #e5e32b;
+}

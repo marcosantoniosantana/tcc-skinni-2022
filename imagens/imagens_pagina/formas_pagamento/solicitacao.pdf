@@ -1,0 +1,169 @@
+
+<!-- saved from url=(0062)http://191.254.251.183/cartaoescolar/solicitacaofinalizada.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body bgcolor="#ffffff">'
+
+
+
+
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expire" content="now">
+<title>Solicitacao</title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+.style41 {font-size: 14px; font-weight: bold;}
+.style4 {font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 18px; }
+.style39 {font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif;}
+.style41 {font-size: 12px; font-weight: bold; }
+.style43 {font-size: 14px; font-weight: bold; color: #FF0000; }
+-->
+</style>
+
+
+
+<form method="post" action="http://191.254.251.183/cartaoescolar/solicitacaofinalizada.jsp" name="frmcad">
+	<input name="acao" type="hidden" value="nada" readonly="">
+	<table border="0" cellpadding="2" cellspacing="2">
+     <tbody>
+       <tr>
+         <td align="center"><span class="style41">POR FAVOR, IMPRIMA ESTA PAGINA E LEVE-A COM SEUS DOCUMENTOS ORIGINAIS E COPIAS </span></td>
+       </tr>
+       <tr>
+         <td align="center"><table border="0" cellpadding="2" cellspacing="0">
+           <tbody><tr>
+             <td><table width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#666666">
+                 <tbody><tr align="left">
+                   <td nowrap=""><table border="0" align="center" cellpadding="2" cellspacing="1">
+                     <tbody><tr align="center">
+                       <td rowspan="2" align="center" nowrap="">
+                         <div align="center"><img src="./solicitacao_files/grupobenfica.jpg" width="157" height="72"></div></td><td nowrap=""><span class="style4">CARTÃO BENFÁCIL </span></td>
+                       <td rowspan="2" nowrap=""><img src="./solicitacao_files/benfacil.jpg" width="202" height="60"></td>
+                       </tr>
+                     <tr>
+                       <td align="center" nowrap=""><span class="style41">DECLARAÇÃO</span></td>
+                       </tr>
+                     <tr>
+                       <td colspan="2" rowspan="2" align="center" nowrap=""><textarea name="textarea" cols="60" rows="19" wrap="VIRTUAL" class="style39">Declaro que recebi o Cartão Benfácil Escolar, para utilização nas catracas eletrônicas dos ônibus das linhas municipais operadas pela empresa BBTransporte e Turismo Ltda, no municipio assinalado, após o respectivo carregamento para a categoria Escolar. Estou ciente que o carregamento, deverá ser efetuado de acordo com a legislação correspondente. Declaro mais que estou ciente que o cartão é personalizado e intransferível, que responderei civil e criminalmente pelo uso indevido do mencionado cartão por terceira pessoa e que em caso de perda, extravio, roubo, furto ou danos no referido cartão, arcarei com o pagamento da taxa de emissão da 2ª. Via, que corresponderá ao valor então vigente de 10(dez) passagens comuns. Estou ciente também que estarei sujeito às sanções civis e penais cabíveis nos casos de uso indevido do mencionado cartão.</textarea></td>
+                       <td align="center" nowrap=""><span class="style43"><br>NÚMERO 29532&nbsp;/2022<br></span></td>
+                       </tr>
+                     <tr>
+                       <td align="center" nowrap=""><table border="1" cellspacing="1" cellpadding="7">
+                         <tbody><tr align="center">
+                           <td colspan="2"><span class="style41">MUNICIPIO</span></td>
+                           </tr>
+                         <tr>
+                           <td><span class="style41">[&nbsp;&nbsp;&nbsp;]</span></td>
+                           <td><span class="style41">BARUERI</span></td>
+                           </tr>
+                         <tr>
+                           <td><span class="style41">[&nbsp;&nbsp;&nbsp;]</span></td>
+                           <td><span class="style41">ITAPEVI</span></td>
+                           </tr>
+                         <tr>
+                           <td><span class="style41">[&nbsp;&nbsp;&nbsp;]</span></td>
+                           <td><span class="style41">JANDIRA</span></td>
+                           </tr>
+                         </tbody></table></td>
+                       </tr>
+                     <tr>
+                       <td colspan="3" align="center" nowrap="">
+                       <table border="1" align="center" cellpadding="4" cellspacing="0"><tbody><tr align="center">
+<td colspan="3" nowrap=""><span class="style41">DADOS DO REQUERENTE</span></td></tr><tr>
+<td align="left" valign="top" nowrap=""><span class="style39"><font face="Verdana" size="1" color="black">Nome: </font><font face="Verdana" size="1" color="black">MARCOS ANTONIO DE SANTANA</font></span></td>
+<td align="left" nowrap=""><span class="style39">RG:<font face="Verdana" size="1" color="black"> 39.878.594-6</font></span></td>
+<td align="left" nowrap=""><span class="style39">CPF:<font face="Verdana" size="1" color="black"> 504.530.518-20</font></span></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap=""><font color="black" face="Verdana" size="1">Responsavel: </font><font face="Verdana" size="1" color="black">OSVALDINA MALTA DE SANTANA</font></td>
+<td align="left" nowrap=""><span class="style39">RG:<font face="Verdana" size="1" color="black"> 53.028.554-x</font></span></td>
+<td align="left" nowrap="">&nbsp;</td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap=""><font face="Verdana" size="1" color="black">Endereço: </font><font face="Verdana" size="1" color="black">Rua Deputado Scalamandre Sobrinho </font><font face="Verdana" size="1" color="black">Compl: </font><font face="Verdana" size="1" color="black">Viela do seu pita</font></td>
+<td align="left" nowrap=""><font face="Verdana" size="1" color="black">C.E.P: </font><font face="Verdana" size="1" color="black">06422-040 </font></td>
+<td align="left" nowrap=""><font face="Verdana" size="1" color="black">Estado:</font><font face="Verdana" size="1" color="black"> SP</font></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap=""><font face="Verdana" size="1" color="black">Bairro: </font><font face="Verdana" size="1" color="black">Jardim Itaquiti</font></td>
+<td colspan="2" align="left" nowrap=""><font face="Verdana" size="1" color="black">Cidade:</font><font face="Verdana" size="1" color="black"> Barueri</font></td>
+</tr><tr>
+<td align="left" valign="top" nowrap=""><font face="Verdana" size="1" color="black">Nome Escola:</font><font face="Verdana" size="1" color="black"> ITB Brasílio Flores de Azevedo</font></td>
+<td colspan="2" align="left" nowrap=""><font face="Verdana" size="1" color="black">Fone: </font><font face="Verdana" size="1" color="black">11 96434-5566</font></td>
+</tr><tr align="left"><td colspan="3" nowrap=""><span class="style39"><br><br>
+<span class="style39">Local e Data:</span>_______________________ &nbsp;&nbsp;&nbsp;&nbsp;<span class="style39">Assinatura do Declarante:</span>___________________________</span></td>
+</tr></tbody></table>
+						</td>
+                       </tr>
+                     <tr>
+                       <td colspan="3" align="center" nowrap=""><table width="100%" border="1" cellpadding="4" cellspacing="0">
+                         <tbody><tr align="center">
+                           <td nowrap=""><span class="style39"><br>
+                             <br>
+                             <span class="style39">Local e Data:</span>_______________________ &nbsp;&nbsp;&nbsp;&nbsp;<span class="style39">Assinatura do Declarante:</span>________________________</span></td>
+                           </tr>
+                         </tbody></table></td>
+                       </tr>
+                    </tbody></table></td>
+                 </tr>
+                 <tr align="left">
+                   <td valign="top" nowrap="">
+                     <table border="1" align="center" cellpadding="4" cellspacing="0">
+                       <tbody><tr align="center">
+                         <td colspan="2" nowrap=""><span class="style41">COMPROVANTE DE ENTREGA DO CARTÃO BENFÁCIL </span></td>
+                        </tr>
+                       <tr>
+                         <td align="left" valign="top" nowrap=""><span class="style39">Cartão Recebido N°:
+                          </span></td>
+                         <td align="left" nowrap=""><span class="style39">Data:</span></td>
+                        </tr>
+                       <tr>
+                         <td colspan="2" align="left" nowrap=""><span class="style39">Obs:</span></td>
+                        </tr>
+                       <tr align="right">
+                         <td colspan="2" nowrap=""><span class="style39"><br>
+                           Assinatura do Requente: _____________________________________ </span></td>
+                        </tr>
+                       <tr align="center">
+                         <td colspan="2" nowrap=""><span class="style39"><br>
+                           Atendido por:_____________________ Chapa N°:</span>_____ <span class="style39"> Assinatura:</span>_________________</td>
+                        </tr>
+                       </tbody></table></td>
+                 </tr>
+                 <tr align="left">
+                   <td align="center" valign="top" nowrap=""><img src="./solicitacao_files/tesoura1.gif" width="100%" height="21"></td>
+                 </tr>
+                 <tr align="left">
+                   <td align="center" valign="top" nowrap=""><table border="1" cellpadding="4" cellspacing="0">
+                       <tbody><tr align="center">
+                         <td nowrap=""><span class="style41">PROTOCOLO PARA RETIRADA DO CARTÃO BENFÁCIL </span></td>
+                         <td nowrap=""><span class="style41"><span class="style43">NÚMERO 29532&nbsp;/2022</span></span></td>
+                       </tr>
+                       <tr>
+                         <td colspan="2" align="left" nowrap=""><span class="style39">Nome do Requerente:</span></td>
+                       </tr>
+                       <tr align="left">
+                         <td colspan="2" nowrap=""><span class="style39"><br>
+                  Atendido por:___________________ Data:</span>__________ <span class="style39"> Assinatura:</span>_________________</td>
+                       </tr>
+                       <tr align="left">
+                         <td colspan="2" nowrap=""><span class="style39"><br>
+                  Local do Atendimento: ____________________________________________ </span></td>
+                       </tr>
+                   </tbody></table></td>
+                 </tr>
+             </tbody></table></td>
+           </tr>
+         </tbody></table></td>
+       </tr>
+       <tr>
+         <td align="center" nowrap=""><span class="style41">POR FAVOR, IMPRIMA ESTA PAGINA E LEVE-A COM SEUS DOCUMENTOS ORIGINAIS E COPIAS </span></td>
+       </tr>
+     </tbody>
+   </table>
+</form>
+
+
+</body></html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cadastro</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="./imagens/imagens_pagina/icone_titulo.png">
+
+	<link rel="stylesheet" type="text/css" href="./css/cadastro.css">
+
+	<link rel = "preconnect" href = "https://fonts.googleapis.com">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		input[type="number"]{
+			width: 200px;
+    margin: 10px 5px 5px 5px;
+    height: 25px;
+    border-style: none;
+    text-decoration: none;
+    background: #cacaca;
+    border-radius: 4px;
+    caret-color: #0b0c42;
+    border-style: none;
+    outline: 0;
+		}
+	</style>
+</head>
+<body>
+
+	<header class="cabecalho">
+
+		<div class="itens-cabecalho">
+
+			<a class="link-inicio" href="index.html">
+				<div class="logo">
+					<h1 class="titulo-logo">Skinni</h1>
+				</div>
+			</a>
+
+		</div>
+	</header>
+
+		<section class="cadastro-geral">
+			<h2 class="titulo">Cadastro</h2>
+
+			<form method="post" action="./php/cadastro.php">
+
+			<div class="itens">
+
+				<div class="dados">
+					
+					<input type="text" id="nome" required placeholder="Nome" name="nome">
+
+					<input type="text" maxlength="14" required id="cpf" placeholder="CPF" name="cpf">
+
+					<input type="text" id="endereco" required placeholder="Endereço" name="endereco">
+
+					<input type="number" id="numeroRua" required placeholder="Número" name="numero">
+
+					<select required name="genero">
+						<option></option>
+						<option value="masculino">Masculino</option>
+						<option value="feminino">Feminino</option>
+						<option value="nf">Não informar</option>
+					</select>
+
+				</div>
+
+				<div class="dados">
+
+					<input type="date" id="dataNascimento" required placeholder="Data de nascimento" name="idade">
+
+					<input type="text" id="telefone" maxlength="15" required placeholder="Número do telefone" name="telefone">
+					
+					<input type="email" id="email" required placeholder="E-mail" name="email">
+
+
+						<input type="password" id="senha" required placeholder="Senha" name="senha">
+
+					<input type="password" id="confirma-senha" required placeholder="Confirmar senha">
+				</div>
+
+			</div>
+
+				<div class="termos-uso">
+					<figure class="caixa-termos" id="caixa-termos">
+						<i class="fas fa-check" id="verificado"></i>
+					</figure>
+					<p class="descricao">Li e concordo com todos os <a> termos de condições</a></p>
+				</div>
+					<input type="checkbox" id="termos" required hidden name="termos">
+
+
+				<button type="submit" id="env-dados"><span class="tEntrar">Criar conta</span></button>
+			</form>
+
+		</section>
+
+		<section class="area"></section>
+
+		<script type="text/javascript" src="./js/cadastro.js"></script>
+
+</body>
+</html>

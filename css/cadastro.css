@@ -1,0 +1,471 @@
+*{
+	margin: 0;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+body{
+	background-image: url('..//imagens/imagens_pagina/fundo.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.cabecalho{
+	width: 100%;
+	height: 150px;
+	background: #0b0c42;
+}
+
+.itens-cabecalho{
+	width: 95%;
+	height: 55%;
+	border-bottom: 1.5px solid #e5e32b;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+	position: relative;
+}
+
+.itens-cabecalho a{
+	text-decoration: none;
+}
+
+.itens-cabecalho a:hover{
+	text-decoration: none;
+}
+
+.logo{
+	top: 50%;
+	left: 50%;
+	transform: skew(-10deg) rotate(-5deg) translate(-50%,-50%);
+	width: fit-content;
+	cursor: pointer;
+	position: absolute;
+}
+
+.titulo-logo{
+	font-size: 80px;
+	color: #e5e32b;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 700;
+	text-shadow: -10px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.barra-pesquisa{
+	width: 700px;
+	height: 35px;
+	background: rgba(255, 255, 255, 0.5);
+	border: 2.5px solid #000000;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.barra-pesquisa .pesquisa{
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.0);
+	border: 0px;
+	outline: 0;
+	font-size: 30px;
+}
+
+.compras, .usuario{
+	width: 45px;
+	height: 45px;
+	background: #e5e32b;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #6b6b6b;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+
+
+.cadastro-geral{
+	width: 450px;
+	padding: 30px;
+	border-radius: 10px;
+	/*background: #7e81b0;*/
+	background-color: #0b0c42;
+	box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.titulo{
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Merriweather Sans', sans-serif;
+	margin-bottom: 10px;
+	color: #f4ec1e;
+}
+
+.itens{
+	display: flex;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type="date"],
+select,
+option{
+	width: 200px;
+	margin: 10px 5px 5px 5px;
+	height: 25px;
+	border-style: none;
+	text-decoration: none;
+	background: #cacaca;
+	border-radius: 4px;
+	caret-color: #0b0c42;
+	border-style: none;
+	outline: 0;
+}
+
+input[type='date']{
+	color: #757575;
+}
+
+button{
+	width: 95%;
+	height: 25px;
+	border-style: none;
+	border-radius: 4px;
+	/*background: #0b0c42;*/
+	background-color: #32278b;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+	margin: 5px;
+	outline: 0;
+	cursor: pointer;
+	opacity: 0.5
+}
+
+.senha{
+	align-items: center;
+	justify-content: center;
+	display: inline-flex;
+}
+
+.mostra-senha{
+	width: 20px;
+}
+
+/*
+.dados{
+	width: 400px;
+	height: 190px;
+	overflow-x: auto;
+}
+
+::-webkit-scrollbar
+{
+	width: 7px;
+}
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background: #cacaca;
+}
+*/
+
+.tEntrar{
+	color: #f4ec1e;
+	font-family: Gill Sans, sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.termos-uso{
+	margin: 5px 0 5px 0;
+	display: inline-flex;
+}
+
+.caixa-termos{
+	width: 14px;
+	height: 14px;
+	border: 2px solid #e5e32e;
+	border-radius: 2px;
+	margin: 0 7px 0 7px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	cursor: pointer;
+}
+
+.caixa-termos:hover{
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.fa-check{
+	font-weight: 800;
+	color: #e5e32b;
+	opacity: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #e5e32b;
+	outline: 0;
+}
+
+a:hover:not(.link-inicio){
+	text-decoration: underline;
+}
+
+.link-inicio{
+    width: fit-content;
+}
+
+.descricao, a{
+	font-size: 15px;
+	font-weight: 500;
+	color: #f4ec1e;
+}
+
+.tela-termos{
+	width: 50%;
+	height: 65%;
+	border-radius: 10px;
+	background: #6f72a1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+
+.tela-termos .itens{
+	margin-top: 5px;
+}
+
+.tela-termos .itens, .tela-termos .itens h2{
+	text-align: center;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.tela-termos .itens i{
+	font-weight: 800;
+	font-size: 1.5rem;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.tela-termos .itens i:hover{
+	color: #ffff00;
+}
+
+.sombra{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.37);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+
+.termos-caixa{
+	width: 85%;
+	height: 70%;
+	background: #7a7ca1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: relative;
+	overflow-y: scroll;
+}
+
+.termos-caixa::-webkit-scrollbar{
+	background: #727495;
+}
+
+.termos-caixa::-webkit-scrollbar-thumb{
+	background: #50516f;
+}
+
+@media screen and (max-width: 768px){
+
+	.cadastro-geral{
+		width: 70%;
+		top: 10%;
+		transform: translate(-50%, 3%);
+		position: relative;
+	}
+
+	.itens{
+		display: block;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="date"],
+	button,
+	select,
+	option{
+		width: 100%;
+		height: 30px;
+	}
+
+	.cabecalho:not(.menu){
+		height: 75px;
+		display: flex;
+		align-items: flex-end;
+		padding-bottom: 35px;
+	}
+
+	.itens-cabecalho{
+		width: 100%;
+		height: 100%;
+		border-bottom: 0;
+	    display: flex;
+	    top: 75%;
+	    left: 0%;
+	    transform: translate(0%,-50%);
+	    position: relative;
+  	    align-items: center;
+	}
+
+	.itens-cabecalho a{
+		left: 50%;
+		transform: translate(-50%, 0);
+		position: relative;
+	}
+
+	.icones{
+		width: fit-content;
+	}
+
+	.icones a .usuario{
+		display: none;
+	}
+
+	.menu{
+		top: 100px;
+		width: 70%;
+		height: 80%;
+		background: #040532;
+		position: fixed;
+		visibility: hidden;
+		overflow-x: auto;
+		z-index: 1;
+	}
+
+	.menu ul:not(.submenu){
+		width: 70%;
+		padding: 10%;
+		margin-left: 30px;
+	}
+
+	.menu ul li{
+		width: 100%;
+		background: #0b0c42;
+		margin-bottom: 5px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.menu ul li:nth-child(1){
+		width: 100%;
+		height: fit-content;
+		background: #0b0c42;
+		display: block;
+		position: relative;
+		padding: 20px 0px 20px 0px;
+	}
+
+	.menu ul li:nth-child(1) .submenu li{
+		background: #040532;
+		width: 100%;
+		height: 65px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+	}
+
+	.menu ul{
+		margin-top: 20px;
+	}
+
+	.submenu{
+		width: 100%;
+		height: fit-content;
+		margin: 20px 0 -20px -40px;
+		display: none;
+	}
+
+	.link-menu{
+		margin: 0;
+	}
+
+	.submenu li a{
+		background: #040532;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.menu-bar{
+		width: fit-content;
+		font-size: 2rem;
+		display: block;
+		/*margin: 10px 0px 0px 30px;*/
+		margin: 0 0 0 29px;
+		visibility: visible;
+	}
+
+	.cor{
+		color: #ff0000;
+		background-image: linear-gradient(180deg, #af8af2, #16188b);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+	}
+
+	.menu-clicado{
+		width: 40px;
+		height: 35px;
+		padding: 10px;
+		background: #040532;
+		text-align: center;
+		border-radius: 30px 30px 0 0;
+		margin: 0 0 0 12px;
+	}
+
+	.visible{
+		visibility: visible;
+	}
+
+	.menu-option-visible{
+		display: block;
+	}
+
+	.titulo-logo{
+		font-size: 3.5rem;
+	}
+
+	.tela-termos{
+		width: 70%;
+		height: 80%;
+	}
+
+	.tela-termos .itens{
+		display: flex;
+		justify-content: center;
+	}
+}
