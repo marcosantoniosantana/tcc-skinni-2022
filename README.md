@@ -1,1 +1,12 @@
-Esse projeto foi desenvolvido durante o segundo e terceiro ano do ensino médio técnico, com o intuíto de criar uma loja de roupas virtual com o tema geek
+<h1 style="color: #ff0043;">Bem vindo</h1>
+
+<p>Esse projeto foi desenvolvido com a finalidade de criar um E-comerce de venda de produtos geek,  para a conclusão do ensino médio no Instituto Técnico de Barueri Brasílio Flores de Azevedo.<br>
+Os responsáveis pela criação desse site foram:</p>
+
+<ul>
+<li>Ana Carolina Martins Lima</li>
+<li>Jefferson Calle Huallpa</li>
+<li>Marcos Antonio de Santana</li>
+<li>Paulo cessar Ferreira de Paula</li>
+<li>Matheus Cantanhede</li>
+</ul>
